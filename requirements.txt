@@ -1,0 +1,9 @@
+torch
+accelerate
+vllm==0.19.0
+openai-whisper
+librosa
+torchaudio
+torchvision
+sacrebleu
+datasets
