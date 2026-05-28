@@ -3,6 +3,7 @@ accelerate
 vllm
 openai-whisper
 librosa
+torch
 torchaudio
 torchvision
 sacrebleu
