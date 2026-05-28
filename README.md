@@ -10,6 +10,8 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 ## Setup
 
 ```bash
+git clone https://github.com/yxduir/esrt
+cd ESRT
 uv venv --python 3.10
 source .venv/bin/activate
 uv pip install -r requirements.txt
