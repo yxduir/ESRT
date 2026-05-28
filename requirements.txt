@@ -1,6 +1,6 @@
 torch
 accelerate
-vllm==0.19.0
+vllm
 openai-whisper
 librosa
 torchaudio
