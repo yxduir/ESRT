@@ -4,8 +4,8 @@
 
 ESRT supports many-to-many speech-to-text translation across **45 languages** (45 × 44 directions). It uses an edge-cloud split inference architecture to protect voice privacy and reduce bandwidth by transmitting only compressed acoustic features instead of raw audio.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.xxxxx-b31b1b.svg)](https://arxiv.org/abs/2503.xxxxx)
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow "https://huggingface.co/yxdu")](https://huggingface.co/yxdu)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.28642-b31b1b.svg)](https://arxiv.org/abs/2605.28642)
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow "https://huggingface.co/yxdu")](https://huggingface.co/yxdu/ESRT-4B)
 
 ## Setup
 
@@ -22,12 +22,13 @@ git clone https://huggingface.co/datasets/yxdu/fleurs_eng_test ./fleurs_eng_test
 ```
 
 ## Inference
-
+Two-stage inference: edge side and cloud side.
 ```bash
+#Offline for Quick Testing
 python test_inference.py
-```
 
-Online deployment guide coming soon.
+#Online deployment guide coming soon.
+```
 
 ## Training
 
@@ -55,5 +56,13 @@ Training code will be open-sourced in a future release. Validated on:
 ## Citation
 
 ```bibtex
-
+@misc{du2026bandwidthefficientprivacypreservingedgecloudmanytomany,
+      title={Bandwidth-Efficient and Privacy-Preserving Edge-Cloud Many-to-Many Speech Translation}, 
+      author={Yexing Du and Kaiyuan Liu and Youcheng Pan and Bo Yang and Ming Liu and Bing Qin and Yang Xiang},
+      year={2026},
+      eprint={2605.28642},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2605.28642}, 
+}
 ```
