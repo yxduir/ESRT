@@ -10,7 +10,7 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 ## Timeline
 
 - **2026-05-29** — macOS CPU support added
-- **2026-05-28** — ESRT-4B has been released on [Hugging Face](https://huggingface.co/yxdu/ESRT-4B) with GPU support.
+- **2026-05-28** — [ESRT-4B](https://huggingface.co/yxdu/ESRT-4B) has been released on Hugging Face with GPU support.
 
 
 ## Setup
