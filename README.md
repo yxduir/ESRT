@@ -19,7 +19,6 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 # Install uv (if not already installed)
 # curl -LsSf https://astral.sh/uv/install.sh | sh
 
-
 git clone https://github.com/yxduir/ESRT
 cd ESRT
 uv venv --python 3.10
