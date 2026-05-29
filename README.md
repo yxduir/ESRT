@@ -45,7 +45,7 @@ bash run_test.sh
 
 #Online deployment guide coming soon.
 ```
-> **Note**: The GPU only supports 'bf16' inference..
+> **Note**: The GPU only supports 'bf16' inference.
 
 
 ## Training
