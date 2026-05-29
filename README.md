@@ -10,12 +10,16 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 ## Setup
 
 ```bash
-git clone https://github.com/yxduir/esrt
+git clone https://github.com/yxduir/ESRT
 cd ESRT
 uv venv --python 3.10
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv pip install -r requirements.txt # for GPU
+
+# uv pip install -r requirements_mac.txt #for Mac
 ```
+> **Note**: Linux setup includes `vllm`. macOS uses CPU backend without `vllm`.
+
 
 ## Test Data
 
@@ -24,10 +28,14 @@ git clone https://huggingface.co/datasets/yxdu/fleurs_eng_test ./fleurs_eng_test
 ```
 
 ## Inference
+
 Two-stage inference: edge side and cloud side.
+
 ```bash
 #Offline for Quick Testing
-python test_inference.py
+bash run_test.sh #for GPU
+
+#bash run_test_mac.sh #for Mac
 
 #Online deployment guide coming soon.
 ```
