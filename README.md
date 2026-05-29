@@ -14,9 +14,9 @@ git clone https://github.com/yxduir/ESRT
 cd ESRT
 uv venv --python 3.10
 source .venv/bin/activate
-uv pip install -r requirements.txt # for GPU
+uv pip install -r requirements.txt 
 
-# uv pip install -r requirements_mac.txt #for Mac
+# uv pip install -r requirements_mac.txt
 ```
 > **Note**: Linux setup includes `vllm`. macOS uses CPU backend without `vllm`.
 
@@ -34,8 +34,8 @@ Two-stage inference: edge side and cloud side.
 ```bash
 #Offline for Quick Testing
 
-bash run_test.sh #for GPU
-#bash run_test_mac.sh #for Mac
+bash run_test.sh 
+#bash run_test_mac.sh 
 
 #Online deployment guide coming soon.
 ```
