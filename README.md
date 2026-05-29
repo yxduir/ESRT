@@ -16,6 +16,10 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 ## Setup
 
 ```bash
+# Install uv (if not already installed)
+# curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
 git clone https://github.com/yxduir/ESRT
 cd ESRT
 uv venv --python 3.10
@@ -40,9 +44,9 @@ Two-stage inference: edge side and cloud side.
 ```bash
 #Offline for Quick Testing
 
-bash run_test.sh 
-#bash run_test_mac.sh 
+bash run_test.sh
 
+#bash run_test_mac.sh 
 #Online deployment guide coming soon.
 ```
 > **Note**: The GPU only supports 'bf16' inference.
