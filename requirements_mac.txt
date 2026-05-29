@@ -1,0 +1,11 @@
+torch
+accelerate
+openai-whisper
+librosa
+torch
+torchaudio
+torchvision
+transformers
+sacrebleu
+datasets
+sentencepiece
