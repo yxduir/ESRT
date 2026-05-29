@@ -1,0 +1,5 @@
+.DS_Store
+.venv
+cache_ESRT-4B_srt_test_eng
+fleurs_eng_test
+*.jsonl

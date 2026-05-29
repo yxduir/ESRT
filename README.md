@@ -7,6 +7,12 @@ ESRT supports many-to-many speech-to-text translation across **45 languages** (4
 [![arXiv](https://img.shields.io/badge/arXiv-2605.28642-b31b1b.svg)](https://arxiv.org/abs/2605.28642)
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97-Models-yellow "https://huggingface.co/yxdu")](https://huggingface.co/yxdu/ESRT-4B)
 
+## Timeline
+
+- **2026-05-29** — macOS CPU support added
+- **2026-05-28** — ESRT-4B has been released on [Hugging Face](https://huggingface.co/yxdu/ESRT-4B) with GPU support.
+
+
 ## Setup
 
 ```bash
@@ -18,7 +24,7 @@ uv pip install -r requirements.txt
 
 # uv pip install -r requirements_mac.txt
 ```
-> **Note**: Linux setup includes `vllm`. macOS uses CPU backend without `vllm`.
+> **Note**: The GPU setup includes `vllm`. macOS uses a CPU backend with `transformers`.
 
 
 ## Test Data

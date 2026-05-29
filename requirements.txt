@@ -1,10 +1,10 @@
-torch
 accelerate
-vllm
+vllm==0.19.0
 openai-whisper
 librosa
-torch
+torchaudio
 torchaudio
 torchvision
+transformers==4.57.6
 sacrebleu
 datasets
