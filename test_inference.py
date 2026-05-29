@@ -301,6 +301,7 @@ def main():
 
     with torch.inference_mode():
         for step, batch in enumerate(tqdm(cloud_loader, desc=f"GPU {accelerator.process_index}", disable=not accelerator.is_local_main_process)):
+            total_batches = len(cloud_loader)
             embeds = batch["adapter_embeds"]
             prompts = batch["prompt"]
 
@@ -347,7 +348,8 @@ def main():
                 last_idx = -1
 
                 print(f"\n{'='*40} BATCH CHECK (Last Item) {'='*40}")
-                print(f"ID          : {batch['id'][last_idx]}")
+                print(f"Progress    : Batch {step + 1}/{total_batches} | Processed {(step + 1) * cloud_batch_size} samples")
+                print(f"Last Item ID: {batch['id'][last_idx]}")
                 print(f"Audio       : {batch['audio'][last_idx]}")
                 print(f"Prompt      : {batch['prompt'][last_idx]}")
                 print(f"Src Lang    : {batch['src'][last_idx]}")
@@ -361,6 +363,8 @@ def main():
                 print(f"S2TT Result : {s2tt_r}")
                 print(f"{'='*105}\n")
 
+                
+
     # Gather results from all GPUs
     accelerator.wait_for_everyone()
     loop_end_time = time.perf_counter()
@@ -368,7 +372,6 @@ def main():
 
     # Post-processing and metrics (main process only)
     if accelerator.is_main_process:
-        total_batches = len(cloud_loader)
         total_loop_time = loop_end_time - loop_start_time
 
         if total_batches > 1:
