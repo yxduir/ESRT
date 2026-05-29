@@ -41,9 +41,9 @@ hf download --repo-type dataset yxdu/fleurs_eng_test --local-dir ./fleurs_eng_te
 Two-stage inference: edge side and cloud side.
 
 ```bash
-#Offline for Quick Testing
 
-bash run_test.sh
+#Offline for performance evaluation, supporting English to 44 languages.
+bash run_eng_44.sh
 
 #bash run_test_mac.sh 
 #Online deployment guide coming soon.
