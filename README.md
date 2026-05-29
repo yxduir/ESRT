@@ -42,7 +42,8 @@ Two-stage inference: edge side and cloud side.
 
 ```bash
 
-#Offline for performance evaluation, supporting English to 44 languages.
+#Offline for performance evaluation. 
+#Total 45x44 directions, this is a demo for English->44.
 bash run_eng_44.sh
 
 #bash run_test_mac.sh 
