@@ -33,8 +33,8 @@ Two-stage inference: edge side and cloud side.
 
 ```bash
 #Offline for Quick Testing
-bash run_test.sh #for GPU
 
+bash run_test.sh #for GPU
 #bash run_test_mac.sh #for Mac
 
 #Online deployment guide coming soon.
