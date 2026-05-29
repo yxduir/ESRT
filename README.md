@@ -24,7 +24,7 @@ uv pip install -r requirements.txt # for GPU
 ## Test Data
 
 ```bash
-git clone https://huggingface.co/datasets/yxdu/fleurs_eng_test ./fleurs_eng_test
+hf download --repo-type dataset yxdu/fleurs_eng_test --local-dir ./fleurs_eng_test
 ```
 
 ## Inference
